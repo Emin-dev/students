@@ -48,7 +48,7 @@ $(document).ready(function () {
         document.querySelector("#messageyou").scrollTo(0, document.querySelector("#messageyou").scrollHeight);
     })
 
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${$("#myWeather").val()}&appid=012d3a58b4fd8ab58c50576d8d087fc1&units=metric`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${$("#myWeather").val()}&appid=012d3a58b4fd8ab58c50576d8d087fc1&units=metric`
     async function myweather() {
         const responce = await fetch(url)
         const data = await responce.json()
