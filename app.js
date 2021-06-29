@@ -206,11 +206,50 @@ $(document).ready(function () {
 
 
     //  Calling .keys() returns an iterator, which lets you iterate over the key values. Important thing at this step is it doesn't return an actual array, you have to spread or loop over the iterator to get the values.
-    myarr = (a) => console.log(a[a.indexOf(Math.min(...a)) + 1], a[a.indexOf(Math.max(...a)) - 1])
-    myarr(ararr = [...Array(50).keys()])
+
+    // myarr = (a) => console.log(a[a.indexOf(Math.min(...a)) + 1], a[a.indexOf(Math.max(...a)) - 1])
+    // myarr(ararr = [...Array(50).keys()])
 
     //     for (let fruit of fruits)
     // If you just wanted to access the index, do:
 
     // for (let index in fruits)
+
+
+
+    let sarray = [12, 89, 67, 54, 32, 21, 98, 57, 27, 83, 10]
+    // let funs = (arr,num) => console.log(arr.filter(a=>a>num))
+    // funs(sarray,70)
+
+
+    // console.log(sarray.filter(a=>a>70))
+
+
+
+
+
+    ///bad
+    // function uppercase(str) {
+    //     var array1 = str.split(' ');
+    //     var newarray1 = [];
+
+    //     for (var x = 0; x < array1.length; x++) {
+    //         newarray1.push(array1[x].charAt(0).toUpperCase() + array1[x].slice(1));
+    //     }
+    //     return newarray1.join(' ');
+    // }
+    // console.log(uppercase("the quick brown fox"));
+
+    ///good
+    upse = a => {
+        newarr = []
+        for (let i of a.split(' '))
+            newarr.push(i.charAt(0).toUpperCase() + i.slice(1))
+        return newarr.join(' ')
+    }
+    console.log(upse('the quick brown fox'))
+
+
+
+    
 })
