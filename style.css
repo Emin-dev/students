@@ -2,6 +2,18 @@ body {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
+body::-webkit-scrollbar {
+  width: 25px;
+}
+body::-webkit-scrollbar-track {
+  background: #E6DAD3;
+}
+body::-webkit-scrollbar-thumb {
+  background: #E6DAD3;
+  border: 2px solid;
+  border-color: #d1b8aa;
+  border-radius: 100px;
+}
 
 #menu {
   position: absolute;
