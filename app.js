@@ -247,10 +247,6 @@ $(document).ready(function () {
             newarr.push(i.charAt(0).toUpperCase() + i.slice(1))
         return newarr.join(' ')
     }
-    console.log(upse('the quick brown fox'))
-
-
-
-    
-    
+    // console.log(upse('the quick brown fox'))
+    $("#big").click(me = () => $("#anw").val(upse($("#anw").val())))
 })

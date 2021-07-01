@@ -156,4 +156,22 @@ body::-webkit-scrollbar-thumb {
   display: block;
   max-width: 200px;
   margin: 10px auto 0;
+}
+
+#shop {
+  margin: 50px 0;
+}
+#shop .box {
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #d6e7ff;
+  padding: 20px;
+}
+#shop .box #big {
+  border-radius: 20px;
+  background-color: #a8ccff;
+  padding: 5px 20px;
+  color: white;
+  margin-left: 10px;
 }/*# sourceMappingURL=style.css.map */
