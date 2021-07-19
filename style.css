@@ -162,4 +162,13 @@ body {
   padding: 5px 20px;
   color: white;
   margin-left: 10px;
+}
+
+#ipad {
+  margin: 50px 0 100px;
+}
+#ipad h1 {
+  font-size: 33px;
+  color: #75acfc;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
