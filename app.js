@@ -171,7 +171,7 @@ $(document).ready(function () {
     // cloning arrays
     let arr = [1, 2, 3, 4]
     let arr2 = [...arr]
-
+ 
 
 
     // miss = () =>('Missing parameter!')
@@ -251,4 +251,7 @@ $(document).ready(function () {
     $("#big").click(me = () => $("#anw").val(upse($("#anw").val())))
 
     //// video
+
+
+    
 })
