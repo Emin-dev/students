@@ -87,6 +87,9 @@ $(document).ready(function () {
 
 
 
+
+
+
     // function sum1(a, b) {
     //     return a + b
     //   }
@@ -94,11 +97,16 @@ $(document).ready(function () {
     //     return a + b
     //   }
     let sum3 = (a, b) => a + b || ''
+
+
     // console.log(sum3(null, undefined))
     // console.log(sum3(1, 2))
     //a+=b
 
 
+
+
+    
 
 
 
