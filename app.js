@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+
+
+    
     $("#me").click(function (e) {
         e.preventDefault()
         function myel(myclass = "") {
@@ -90,6 +94,77 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+// $('h2').click(function (e) { 
+//     e.preventDefault();
+//     $('h2').html(1234);
+// });
+
+
+
+// $('.btn').click(function (e) { 
+//     e.preventDefault();
+    
+//     let a = (a) =>  {
+//         for (let i = 1; i <=a; i++) {
+//             $('.col-md-12').append(`<h1>${i}</h1>`);
+//         }
+//     }
+//     a($('input').val())
+//     $('input').val('');
+
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // function sum1(a, b) {
     //     return a + b
     //   }
@@ -140,14 +215,11 @@ $(document).ready(function () {
 
 
 
-    let z = 3
-    let x = () => {
-        // console.log('x')
-    }
-    let y = () => {
-        // console.log('y')
-    }
-    (z == 3 ? x : y)()
+    let z = 333;
+    // let x = () =>  console.log('x');
+    // let y = () =>  console.log('y') ;
+
+    // (z == 3 ? x : y )()
 
 
 
