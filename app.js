@@ -1,12 +1,11 @@
 $(document).ready(function () {
 
 
-
     
     $("#me").click(function (e) {
         e.preventDefault()
         function myel(myclass = "") {
-            if (!$.trim($("#inputme").val()) == '') {
+            if (!$("#inputme").val().trim() == '') {
                 let vall = $("#inputme").val()
                     , newH3 = $('<h3> </h3>')
                     , newDiv = $('<div class="line" > </div>')
@@ -18,7 +17,7 @@ $(document).ready(function () {
             }
             else {
                 return
-            }
+            } 
 
         }
         $("#messageyou").append(myel())
@@ -27,9 +26,24 @@ $(document).ready(function () {
         document.querySelector("#messageme").scrollTo(0, document.querySelector("#messageme").scrollHeight)
         document.querySelector("#messageyou").scrollTo(0, document.querySelector("#messageyou").scrollHeight)
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     $("#you").click(function (e) {
         e.preventDefault()
-        if (!$.trim($("#inputyou").val()) == '') {
+        if (!$("#inputyou").val().trim() == '') {
             myel = (myclass = "") => {
                 let vall = $("#inputyou").val()
                     , newH3 = $('<h3> </h3>')
@@ -51,6 +65,27 @@ $(document).ready(function () {
         document.querySelector("#messageme").scrollTo(0, document.querySelector("#messageme").scrollHeight)
         document.querySelector("#messageyou").scrollTo(0, document.querySelector("#messageyou").scrollHeight)
     })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
