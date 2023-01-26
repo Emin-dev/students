@@ -1,23 +1,32 @@
-import { useState, useRef} from "react";
-import Todo from "./Todo"; 
+import { useState, useRef } from "react";
+import Todo from "./Todo";
 function App() {
   const [todos, setTodos] = useState([])
   const nam = useRef()
-  function add(e){
+  function add(e) {
     const name = nam.current.value
     setTodos(pt => {
-      return [...pt, {name: name}]
+      return [...pt, { name: name }]
     })
     nam.current.value = null
   }
   return (
 
-    <> 
-    <button onClick={add}> Ad Todo</button> 
-    <input ref={nam} type='text'/>
-    <Todo todos={todos}/> 
+    <>
+      <section id="info">
+        <div class='container'>
+          <div class='row'>
+            <div class='column'>
+              <p>{todos.length}</p>
+              <button onClick={add}> Ad Todo</button>
+              <input ref={nam} type='text' />
+              <Todo todos={todos} />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
-   
+
   );
 }
 
